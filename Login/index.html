@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to MyInfo</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="item1">
+                <h2 style="text-align: center;">Enter details to Login</h2>
+            </div>
+            <div class="item2"> <label>
+                    <input type="text" id="text" name="text" placeholder="Enter your name">
+                </label>
+            </div>
+            <div class="item3"> <label>
+                    <input type="text" id="text1" name="text1" placeholder="Enter your password">
+                </label></div>
+            <div class="item4">
+                <button class="btn" onclick="f()">Login</button>
+            </div>
+            <div class="item5">
+                <button onclick="help()" class="help">?</button>
+                <p id="help"></p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="load"></div>
+            <div class="demo">
+                <p>Loading...</p>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="welcome">
+                <p id="welcome">welcome</p>
+            </div><br><br>
+            <div class="goto"><button class="go" onclick="goto()">Visit</button></div>
+        </div>
+</body>
+
+</html>

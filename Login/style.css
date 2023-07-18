@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(/beach.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Crimson Text', serif;
+}
+
+.error {
+    background-image: url(/error.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background: rgb(225, 164, 164); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    width: 30%;
+    height: 70vh;
+    /* background-color: rgb(190, 176, 176); */
+
+}
+
+.container1:hover {
+    box-shadow: 5px 5px 5px 5px rgb(30, 30, 31);
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.item1 {
+    position: relative;
+    top: 20%;
+}
+
+.item2 {
+    position: relative;
+    top: 30%;
+    left: 10%;
+}
+
+.item3 {
+    position: relative;
+    top: 37%;
+    left: 10%;
+}
+
+.item4 {
+    position: relative;
+    top: 45%;
+    left: 20%;
+}
+
+.item5 {
+    position: relative;
+    top: 50%;
+    left: 10%;
+    color: white;
+}
+
+#text,
+#text1 {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 30px;
+    width: 75%;
+}
+
+.btn {
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 60%;
+    background-color: rgb(215, 81, 33);
+    cursor: pointer;
+}
+
+.help {
+    padding: 5px;
+    width: 7%;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container2 {
+    width: 20%;
+    height: 40vh;
+    display: none;
+}
+
+.load {
+    position: relative;
+    top: 10%;
+    left: 30%;
+    border-top: 5px solid rgb(37, 37, 212);
+    border-radius: 50%;
+    width: 35%;
+    height: 15vh;
+    animation: rotate 3s infinite;
+}
+
+.demo {
+    position: relative;
+    top: 20%;
+    left: 35%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(120deg);
+    }
+
+    75% {
+        transform: rotate(200deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container3 {
+    width: 30%;
+    height: 50vh;
+    display: none;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.go {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(235, 47, 22);
+    width: 50%;
+    box-shadow: 3px 3px 3px rgb(169, 59, 5);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .container1 {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    .load {
+        width: 30%;
+        height: 30%;
+        background-color: rgb(37, 37, 212);
+        box-shadow: 2px 2px 2px rgb(30, 30, 31);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container1 {
+        width: 50%;
+    }
+
+    .item5 {
+        color: black;
+    }
+
+    .load {
+        width: 50%;
+        height: 35%;
+        background-color: rgb(37, 37, 212);
+    }
+}
+
+@media screen and (max-width:650px) {
+    .container1 {
+        width: 63%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container1 {
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .container1 {
+        width: 72%;
+    }
+}
+
+@media screen and (max-height:450px) {
+    .container1 {
+        height: 90vh;
+    }
+
+}
